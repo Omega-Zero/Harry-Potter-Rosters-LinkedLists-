@@ -1,0 +1,336 @@
+Enter command: help
+help
+Prints this display
+
+load <filename>
+Adds the contents of a file to the current roster
+
+save <filename>
+Saves the current roster to a file
+
+clear
+Clear the current roster
+
+inorder
+Print out an inorder traversal of the roster for each house
+
+preorder
+Print out a preorder traversal of the roster for each house
+
+postorder
+Print out a postorder traversal of the roster for each house
+
+add <firstname> <lastname> <points> <year> <house>
+Adds a student to the roster
+
+kill <firstname> <lastname> <house>
+Moves a student to the deceased list
+
+find <firstname> <lastname> <house>
+Searches for a student in a house
+
+points <firstname> <lastname> <house> <points>
+Changes the points a student has earned by the specified amount
+
+score
+Lists the point totals for all four houses
+
+quit
+Quits the program
+
+Enter command: load roster.dat
+Successfully loaded data from file roster.dat.
+Enter command: preorder
+Preorder print-out of roster:
+
+Gryffindor House
+
+Dennis Creevey           Points: 0	Year: 1	House: Gryffindor
+Katie Bell               Points: 0	Year: 5	House: Gryffindor
+Colin Creevey            Points: 0	Year: 3	House: Gryffindor
+Lavender Brown           Points: 0	Year: 4	House: Gryffindor
+Romilda Vane             Points: 0	Year: 2	House: Gryffindor
+Harry Potter             Points: 0	Year: 4	House: Gryffindor
+Jimmy Peakes             Points: 0	Year: 1	House: Gryffindor
+Cormac McLaggen          Points: 0	Year: 5	House: Gryffindor
+Natalie McDonald         Points: 0	Year: 1	House: Gryffindor
+Hermione Granger         Points: 0	Year: 4	House: Gryffindor
+Seamus Finnigan          Points: 0	Year: 4	House: Gryffindor
+Lee Jordan               Points: 0	Year: 6	House: Gryffindor
+Angelina Johnson         Points: 0	Year: 6	House: Gryffindor
+Neville Longbottom       Points: 0	Year: 4	House: Gryffindor
+Parvati Patil            Points: 0	Year: 4	House: Gryffindor
+Alicia Spinnet           Points: 0	Year: 6	House: Gryffindor
+Dean Thomas              Points: 0	Year: 4	House: Gryffindor
+Kenneth Towler           Points: 0	Year: 6	House: Gryffindor
+Ginny Weasley            Points: 0	Year: 3	House: Gryffindor
+Fred Weasley             Points: 0	Year: 6	House: Gryffindor
+George Weasley           Points: 0	Year: 6	House: Gryffindor
+Ron Weasley              Points: 0	Year: 4	House: Gryffindor
+
+Ravenclaw House
+
+Luna Lovegood            Points: 0	Year: 3	House: Ravenclaw
+Terry Boot               Points: 0	Year: 4	House: Ravenclaw
+Marcus Belby             Points: 0	Year: 6	House: Ravenclaw
+Mandy Brocklehurst       Points: 0	Year: 4	House: Ravenclaw
+Anthony Goldstein        Points: 0	Year: 4	House: Ravenclaw
+Michael Corner           Points: 0	Year: 4	House: Ravenclaw
+Eddie Carmichael         Points: 0	Year: 6	House: Ravenclaw
+Cho Chang                Points: 0	Year: 5	House: Ravenclaw
+Roger Davies             Points: 0	Year: 6	House: Ravenclaw
+Marietta Edgecombe       Points: 0	Year: 6	House: Ravenclaw
+Orla Quirke              Points: 0	Year: 1	House: Ravenclaw
+Padma Patil              Points: 0	Year: 4	House: Ravenclaw
+Lisa Turpin              Points: 0	Year: 4	House: Ravenclaw
+
+Hufflepuff House
+
+Eleanor Branstone        Points: 0	Year: 1	House: Hufflepuff
+Hannah Abbott            Points: 0	Year: 4	House: Hufflepuff
+Susan Bones              Points: 0	Year: 4	House: Hufflepuff
+Owen Cauldwell           Points: 0	Year: 1	House: Hufflepuff
+Laura Madley             Points: 0	Year: 1	House: Hufflepuff
+Justin Finch-Fletchley   Points: 0	Year: 4	House: Hufflepuff
+Cedric Diggory           Points: 0	Year: 6	House: Hufflepuff
+Ernie Macmillan          Points: 0	Year: 4	House: Hufflepuff
+Kevin Whitby             Points: 0	Year: 1	House: Hufflepuff
+
+Slytherin House
+
+Malcolm Baddock          Points: 0	Year: 1	House: Slytherin
+Graham Pritchard         Points: 0	Year: 1	House: Slytherin
+Draco Malfoy             Points: 0	Year: 4	House: Slytherin
+Vincent Crabbe           Points: 0	Year: 4	House: Slytherin
+Millicent Bulstrode      Points: 0	Year: 4	House: Slytherin
+Miles Bletchley          Points: 0	Year: 6	House: Slytherin
+Gregory Goyle            Points: 0	Year: 4	House: Slytherin
+Tracey Davis             Points: 0	Year: 4	House: Slytherin
+Daphne Greengrass        Points: 0	Year: 4	House: Slytherin
+Terence Higgs            Points: 0	Year: 6	House: Slytherin
+Pansy Parkinson          Points: 0	Year: 4	House: Slytherin
+Theodore Nott            Points: 0	Year: 4	House: Slytherin
+Blaise Zabini            Points: 0	Year: 4	House: Slytherin
+Adrian Pucey             Points: 0	Year: 5	House: Slytherin
+
+Deceased
+
+
+
+Enter command: add Albus Dumbledore 0 94 Gryffindor
+Add failed. Invalid year: 94
+Enter command: add Barry Wittman 0 7 Otterbein
+Add failed. Invalid house: Otterbein
+Enter command: add Fleur Delacour 0 7 Ravenclaw
+Added Fleur Delacour to roster.
+Enter command: points Susan Bones Hufflepuff 5
+Points for Susan Bones changed to 5.
+Enter command: points Harry Potter Gryffindor 10
+Points for Harry Potter changed to 10.
+Enter command: points Harry Potter Gryffindor -20
+Points for Harry Potter changed to -10.
+Enter command: find Susan Bones Hufflepuff
+Susan Bones              Points: 5	Year: 4	House: Hufflepuff
+Enter command: kill Pansy Parkinson Slytherin
+Moved Pansy Parkinson to list of deceased students.
+Enter command: kill Harry Potter Gryffindor
+Moved Harry Potter to list of deceased students.
+Enter command: points Ron Weasley Gryffindor 20
+Points for Ron Weasley changed to 20.
+Enter command: points Hermione Granger Gryffindor 40
+Points for Hermione Granger changed to 40.
+Enter command: points Draco Malfoy Slytherin 15
+Points for Draco Malfoy changed to 15.
+Enter command: points Luna Lovegood Ravenclaw 30
+Points for Luna Lovegood changed to 30.
+Enter command: kill Cedric Diggory Hufflepuff
+Moved Cedric Diggory to list of deceased students.
+Enter command: postorder
+Postorder print-out of roster:
+
+Gryffindor House
+
+Lavender Brown           Points: 0	Year: 4	House: Gryffindor
+Colin Creevey            Points: 0	Year: 3	House: Gryffindor
+Katie Bell               Points: 0	Year: 5	House: Gryffindor
+Seamus Finnigan          Points: 0	Year: 4	House: Gryffindor
+Angelina Johnson         Points: 0	Year: 6	House: Gryffindor
+Neville Longbottom       Points: 0	Year: 4	House: Gryffindor
+Lee Jordan               Points: 0	Year: 6	House: Gryffindor
+Hermione Granger         Points: 40	Year: 4	House: Gryffindor
+Natalie McDonald         Points: 0	Year: 1	House: Gryffindor
+Parvati Patil            Points: 0	Year: 4	House: Gryffindor
+Cormac McLaggen          Points: 0	Year: 5	House: Gryffindor
+Jimmy Peakes             Points: 0	Year: 1	House: Gryffindor
+Kenneth Towler           Points: 0	Year: 6	House: Gryffindor
+Dean Thomas              Points: 0	Year: 4	House: Gryffindor
+Alicia Spinnet           Points: 0	Year: 6	House: Gryffindor
+George Weasley           Points: 0	Year: 6	House: Gryffindor
+Fred Weasley             Points: 0	Year: 6	House: Gryffindor
+Ron Weasley              Points: 20	Year: 4	House: Gryffindor
+Ginny Weasley            Points: 0	Year: 3	House: Gryffindor
+Romilda Vane             Points: 0	Year: 2	House: Gryffindor
+Dennis Creevey           Points: 0	Year: 1	House: Gryffindor
+
+Ravenclaw House
+
+Marcus Belby             Points: 0	Year: 6	House: Ravenclaw
+Cho Chang                Points: 0	Year: 5	House: Ravenclaw
+Eddie Carmichael         Points: 0	Year: 6	House: Ravenclaw
+Fleur Delacour           Points: 0	Year: 7	House: Ravenclaw
+Marietta Edgecombe       Points: 0	Year: 6	House: Ravenclaw
+Roger Davies             Points: 0	Year: 6	House: Ravenclaw
+Michael Corner           Points: 0	Year: 4	House: Ravenclaw
+Anthony Goldstein        Points: 0	Year: 4	House: Ravenclaw
+Mandy Brocklehurst       Points: 0	Year: 4	House: Ravenclaw
+Terry Boot               Points: 0	Year: 4	House: Ravenclaw
+Padma Patil              Points: 0	Year: 4	House: Ravenclaw
+Lisa Turpin              Points: 0	Year: 4	House: Ravenclaw
+Orla Quirke              Points: 0	Year: 1	House: Ravenclaw
+Luna Lovegood            Points: 30	Year: 3	House: Ravenclaw
+
+Hufflepuff House
+
+Susan Bones              Points: 5	Year: 4	House: Hufflepuff
+Hannah Abbott            Points: 0	Year: 4	House: Hufflepuff
+Ernie Macmillan          Points: 0	Year: 4	House: Hufflepuff
+Justin Finch-Fletchley   Points: 0	Year: 4	House: Hufflepuff
+Kevin Whitby             Points: 0	Year: 1	House: Hufflepuff
+Laura Madley             Points: 0	Year: 1	House: Hufflepuff
+Owen Cauldwell           Points: 0	Year: 1	House: Hufflepuff
+Eleanor Branstone        Points: 0	Year: 1	House: Hufflepuff
+
+Slytherin House
+
+Miles Bletchley          Points: 0	Year: 6	House: Slytherin
+Millicent Bulstrode      Points: 0	Year: 4	House: Slytherin
+Tracey Davis             Points: 0	Year: 4	House: Slytherin
+Terence Higgs            Points: 0	Year: 6	House: Slytherin
+Daphne Greengrass        Points: 0	Year: 4	House: Slytherin
+Gregory Goyle            Points: 0	Year: 4	House: Slytherin
+Vincent Crabbe           Points: 0	Year: 4	House: Slytherin
+Theodore Nott            Points: 0	Year: 4	House: Slytherin
+Draco Malfoy             Points: 15	Year: 4	House: Slytherin
+Adrian Pucey             Points: 0	Year: 5	House: Slytherin
+Blaise Zabini            Points: 0	Year: 4	House: Slytherin
+Graham Pritchard         Points: 0	Year: 1	House: Slytherin
+Malcolm Baddock          Points: 0	Year: 1	House: Slytherin
+
+Deceased
+
+Cedric Diggory           Points: 0	Year: 6	House: Hufflepuff
+Harry Potter             Points: -10	Year: 4	House: Gryffindor
+Pansy Parkinson          Points: 0	Year: 4	House: Slytherin
+
+
+Enter command: inorder 
+Inorder print-out of roster:
+
+Gryffindor House
+
+Katie Bell               Points: 0	Year: 5	House: Gryffindor
+Lavender Brown           Points: 0	Year: 4	House: Gryffindor
+Colin Creevey            Points: 0	Year: 3	House: Gryffindor
+Dennis Creevey           Points: 0	Year: 1	House: Gryffindor
+Seamus Finnigan          Points: 0	Year: 4	House: Gryffindor
+Hermione Granger         Points: 40	Year: 4	House: Gryffindor
+Angelina Johnson         Points: 0	Year: 6	House: Gryffindor
+Lee Jordan               Points: 0	Year: 6	House: Gryffindor
+Neville Longbottom       Points: 0	Year: 4	House: Gryffindor
+Natalie McDonald         Points: 0	Year: 1	House: Gryffindor
+Cormac McLaggen          Points: 0	Year: 5	House: Gryffindor
+Parvati Patil            Points: 0	Year: 4	House: Gryffindor
+Jimmy Peakes             Points: 0	Year: 1	House: Gryffindor
+Alicia Spinnet           Points: 0	Year: 6	House: Gryffindor
+Dean Thomas              Points: 0	Year: 4	House: Gryffindor
+Kenneth Towler           Points: 0	Year: 6	House: Gryffindor
+Romilda Vane             Points: 0	Year: 2	House: Gryffindor
+Fred Weasley             Points: 0	Year: 6	House: Gryffindor
+George Weasley           Points: 0	Year: 6	House: Gryffindor
+Ginny Weasley            Points: 0	Year: 3	House: Gryffindor
+Ron Weasley              Points: 20	Year: 4	House: Gryffindor
+
+Ravenclaw House
+
+Marcus Belby             Points: 0	Year: 6	House: Ravenclaw
+Terry Boot               Points: 0	Year: 4	House: Ravenclaw
+Mandy Brocklehurst       Points: 0	Year: 4	House: Ravenclaw
+Eddie Carmichael         Points: 0	Year: 6	House: Ravenclaw
+Cho Chang                Points: 0	Year: 5	House: Ravenclaw
+Michael Corner           Points: 0	Year: 4	House: Ravenclaw
+Roger Davies             Points: 0	Year: 6	House: Ravenclaw
+Fleur Delacour           Points: 0	Year: 7	House: Ravenclaw
+Marietta Edgecombe       Points: 0	Year: 6	House: Ravenclaw
+Anthony Goldstein        Points: 0	Year: 4	House: Ravenclaw
+Luna Lovegood            Points: 30	Year: 3	House: Ravenclaw
+Padma Patil              Points: 0	Year: 4	House: Ravenclaw
+Orla Quirke              Points: 0	Year: 1	House: Ravenclaw
+Lisa Turpin              Points: 0	Year: 4	House: Ravenclaw
+
+Hufflepuff House
+
+Hannah Abbott            Points: 0	Year: 4	House: Hufflepuff
+Susan Bones              Points: 5	Year: 4	House: Hufflepuff
+Eleanor Branstone        Points: 0	Year: 1	House: Hufflepuff
+Owen Cauldwell           Points: 0	Year: 1	House: Hufflepuff
+Justin Finch-Fletchley   Points: 0	Year: 4	House: Hufflepuff
+Ernie Macmillan          Points: 0	Year: 4	House: Hufflepuff
+Laura Madley             Points: 0	Year: 1	House: Hufflepuff
+Kevin Whitby             Points: 0	Year: 1	House: Hufflepuff
+
+Slytherin House
+
+Malcolm Baddock          Points: 0	Year: 1	House: Slytherin
+Miles Bletchley          Points: 0	Year: 6	House: Slytherin
+Millicent Bulstrode      Points: 0	Year: 4	House: Slytherin
+Vincent Crabbe           Points: 0	Year: 4	House: Slytherin
+Tracey Davis             Points: 0	Year: 4	House: Slytherin
+Gregory Goyle            Points: 0	Year: 4	House: Slytherin
+Daphne Greengrass        Points: 0	Year: 4	House: Slytherin
+Terence Higgs            Points: 0	Year: 6	House: Slytherin
+Draco Malfoy             Points: 15	Year: 4	House: Slytherin
+Theodore Nott            Points: 0	Year: 4	House: Slytherin
+Graham Pritchard         Points: 0	Year: 1	House: Slytherin
+Adrian Pucey             Points: 0	Year: 5	House: Slytherin
+Blaise Zabini            Points: 0	Year: 4	House: Slytherin
+
+Deceased
+
+Cedric Diggory           Points: 0	Year: 6	House: Hufflepuff
+Pansy Parkinson          Points: 0	Year: 4	House: Slytherin
+Harry Potter             Points: -10	Year: 4	House: Gryffindor
+
+
+Enter command: score
+Point totals:
+
+Gryffindor House:	60
+Ravenclaw House:	30
+Hufflepuff House:	5
+Slytherin House:	15
+Enter command: clear
+All data cleared.
+Enter command: inorder
+Inorder print-out of roster:
+
+Gryffindor House
+
+
+Ravenclaw House
+
+
+Hufflepuff House
+
+
+Slytherin House
+
+
+Deceased
+
+
+
+Enter command: blanket
+Unknown command: blanket
+Enter command: quit
+All data cleared.
+
