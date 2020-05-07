@@ -1,0 +1,2 @@
+# Harry-Potter-Rosters-LinkedLists-
+Project mimicks a mock spreadsheet of students attending Hogwarts academy in the fictional book series of Harry Potter. Project demonstrates the use of doubly linked lists, binary trees, tree traversals, and simple file I/O in C and command line linux. In short, user can load an existing list of students provided the list is formatted correctly fomr a .txt, add/delete students or their points from the list, etc. For more in depth analysis of the project, see the assignmentHTML.
